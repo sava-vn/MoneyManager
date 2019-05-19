@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/main_action_day"
+        android:icon="@drawable/ic_day_white"
+        android:title="DAY"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/main_action_month"
+        android:icon="@drawable/ic_month_white"
+        android:title="MONTH"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/main_action_year"
+        android:icon="@drawable/ic_year_white"
+        android:title="YEAR"
+        app:showAsAction="always"></item>
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp">
+    <TextView
+        android:fontFamily="@font/unicaoneregular"
+        android:id="@+id/item_tiem_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tháng 05 năm 2019"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"/>
+</androidx.cardview.widget.CardView>

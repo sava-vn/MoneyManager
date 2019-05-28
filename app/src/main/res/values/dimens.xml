@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionbar_size">56dp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_normal">18sp</dimen>
+    <dimen name="text_big">20sp</dimen>
+    <dimen name="text_title">26sp</dimen>
+    <dimen name="acitonbar_margin">16dp</dimen>
+    <dimen name="top_margin">8dp</dimen>
+    <dimen name="bottom_margin">4dp</dimen>
+    <dimen name="title_margin">12dp</dimen>
+    <dimen name="item_time">150dp</dimen>
+    <dimen name="item_margin_left_right">8dp</dimen>
+    <dimen name="item_margin_bottom_top">4dp</dimen>
+    <dimen name="item_radius">8dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_margin">8dp</dimen>
+    <dimen name="icon_size_big">32dp</dimen>
+</resources>

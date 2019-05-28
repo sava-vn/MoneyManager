@@ -1,37 +1,39 @@
 package com.example.moneymanager.model;
 
 public class Payment {
-    private String mId;
-    private long mMoney;
-    private Date mDate;
-    private String mNote;
-    private int mType;
+    protected String mIdPayment;
+    protected int mType;
+    protected Date mDate;
+    protected long mMoney;
+    protected String mNode;
 
     public Payment() {
-
+        this.mDate = new Date();
+        mNode ="Không có ghi chú";
     }
-    public Payment(String mId, long mMoney, Date mDate, String mNote, int mType) {
-        this.mId = mId;
-        this.mMoney = mMoney;
-        this.mDate = mDate;
-        this.mNote = mNote;
+
+    public Payment(String mIdPayment, int mType, Date mDate, long mMoney, String mNode) {
+        this.mIdPayment = mIdPayment;
         this.mType = mType;
-    }
-
-    public String getmId() {
-        return mId;
-    }
-
-    public void setmId(String mId) {
-        this.mId = mId;
-    }
-
-    public long getmMoney() {
-        return mMoney;
-    }
-
-    public void setmMoney(long mMoney) {
+        this.mDate = new Date(mDate.getmDayOfWeek(),mDate.getmDayOfMonth(),mDate.getmMonth(),mDate.getmYear());
         this.mMoney = mMoney;
+        this.mNode = mNode;
+    }
+
+    public String getmIdPayment() {
+        return mIdPayment;
+    }
+
+    public void setmIdPayment(String mIdPayment) {
+        this.mIdPayment = mIdPayment;
+    }
+
+    public int getmType() {
+        return mType;
+    }
+
+    public void setmType(int mType) {
+        this.mType = mType;
     }
 
     public Date getmDate() {
@@ -42,19 +44,19 @@ public class Payment {
         this.mDate = mDate;
     }
 
-    public String getmNote() {
-        return mNote;
+    public long getmMoney() {
+        return mMoney;
     }
 
-    public void setmNote(String mNote) {
-        this.mNote = mNote;
+    public void setmMoney(long mMoney) {
+        this.mMoney = mMoney;
     }
 
-    public int getmType() {
-        return mType;
+    public String getmNode() {
+        return mNode;
     }
 
-    public void setmType(int mType) {
-        this.mType = mType;
+    public void setmNode(String mNode) {
+        this.mNode = mNode;
     }
 }

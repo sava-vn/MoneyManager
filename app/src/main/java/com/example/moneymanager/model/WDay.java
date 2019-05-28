@@ -1,15 +1,13 @@
 package com.example.moneymanager.model;
 
-import androidx.annotation.NonNull;
-
 import java.util.ArrayList;
 
-public class Day extends Time {
+public class WDay extends WBasic {
     private ArrayList<Payment> mListPayment;
 
-    public Day() {
+    public WDay() {
         super();
-        mListPayment = new ArrayList<>();
+        this.mListPayment = new ArrayList<>();
     }
 
     public ArrayList<Payment> getmListPayment() {
@@ -18,11 +16,5 @@ public class Day extends Time {
 
     public void setmListPayment(ArrayList<Payment> mListPayment) {
         this.mListPayment = mListPayment;
-    }
-
-    @NonNull
-    @Override
-    public String toString() {
-        return mDate.showDay();
     }
 }

@@ -1,17 +1,23 @@
 package com.example.moneymanager.model;
 
-public class Time {
+public class WBasic {
+    protected Date mDate;
     protected long mMoneyIn;
     protected long mMoneyOut;
     protected long mBlance;
-    protected Date mDate;
+    protected int mCountPayment;
     protected int mViewType;
-    protected int mCountPay;
-    protected String mNote;
 
-    public Time() {
-        this.mDate = new Date();
-        this.mNote = "Không có ghi chú nào";
+    public WBasic() {
+        mDate = new Date();
+    }
+
+    public Date getmDate() {
+        return mDate;
+    }
+
+    public void setmDate(Date mDate) {
+        this.mDate = new Date(mDate.getmDayOfWeek(),mDate.getmDayOfMonth(),mDate.getmMonth(),mDate.getmYear());
     }
 
     public long getmMoneyIn() {
@@ -38,12 +44,12 @@ public class Time {
         this.mBlance = mBlance;
     }
 
-    public Date getmDate() {
-        return mDate;
+    public int getmCountPayment() {
+        return mCountPayment;
     }
 
-    public void setmDate(Date mDate) {
-        this.mDate = new Date(mDate.getmDay(),mDate.getmMonth(),mDate.getmYear(),mDate.getmDoW());
+    public void setmCountPayment(int mCountPayment) {
+        this.mCountPayment += mCountPayment;
     }
 
     public int getmViewType() {
@@ -52,21 +58,5 @@ public class Time {
 
     public void setmViewType(int mViewType) {
         this.mViewType = mViewType;
-    }
-
-    public int getmCountPay() {
-        return mCountPay;
-    }
-
-    public void setmCountPay(int mCountPay) {
-        this.mCountPay += mCountPay;
-    }
-
-    public String getmNote() {
-        return mNote;
-    }
-
-    public void setmNote(String mNote) {
-        this.mNote = mNote;
     }
 }
